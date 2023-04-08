@@ -1,0 +1,681 @@
+/* Common css start  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul, ol{
+    list-style-type: none;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.fix{
+    clear: both;
+}
+@font-face {
+    font-family: 'myriad pro-light';
+    src: url(../myriad-pro-cufonfonts/MyriadPro-Light.otf);
+}
+@font-face {
+    font-family: 'myriad pro-bold';
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-BOLD.OTF);
+}
+@font-face {
+    font-family: 'myriad pro-regular';
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+    font-family: 'myriad pro-semibold';
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-SEMIBOLD.OTF);
+}
+
+/* Common css end  */
+
+/* Header css start  */
+
+#header-part{
+    background: #0872b9;
+    height: 32px;
+}
+.header-left{
+    float: left;
+    width: 50%;
+}
+.header-left p{
+    line-height: 32px;  
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header-right{
+    float: left;
+    width: 50%;
+    text-align: end;
+}
+.header-right a{
+    margin-left: 25px;
+    color: #fff; 
+    line-height: 32px;
+}
+.header-right a:hover{
+    color: #353535;
+    transition: all linear 0.5s;
+}
+
+/* Header css end  */
+
+/* Navbar css start  */
+
+#navbar{
+    background: #fff;
+    height: 80px;
+}
+.logo{
+    float: left;
+    width: 20%;
+}
+.logo a{
+    line-height: 80px;
+}
+.nav-item{
+    float: left;
+    width: 80%;
+}
+.nav-item ul{
+    float: right;
+}
+.nav-item ul li{
+    float: left;
+}
+.nav-item ul li a{
+    line-height: 80px;
+    color: #353535;
+    margin-left: 15px;
+    font-family: 'myriad pro-regular';
+}
+.nav-item ul li a:hover{
+    color: #0872b9;
+    transition: all linear 0.5s;
+}
+
+/* Navbar css end  */
+
+/* Banner css start  */
+
+#banner{
+    background: url(../images/Beatles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.banner-text{
+    text-align: right;
+    float: right;
+}
+.banner-text h3{
+    font-family: 'myriad pro-regular';
+    font-size: 30px;
+    color: #fff;
+}
+.banner-text h1{
+    font-family: 'myriad pro-regular';
+    font-size: 40px;
+    color: #fff;
+}
+.banner-text p{
+    width: 460px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+.banner-btn a{
+    padding: 10px 20px;
+    background: #0872b9;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.banner-btn a:hover{
+    background: transparent;
+    transition: all linear 0.5s;
+}
+
+/* Banner css end  */
+
+/* About css start  */
+
+#about-us{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.common-title h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #353535;
+}
+.common-title{
+    position: relative;
+    display: inline-block;
+}
+.common-title img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.about-us-photo{
+    float: left;
+    width: 380px;
+    margin-top: 40px;
+}
+.about-us-lorem{
+    float: left;
+    width: 540px;
+    text-align: justify;
+    margin-top: 70px;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.about-us-lorem p span{
+    padding-top: 20px;
+    display: block;
+}
+
+/* About css end  */
+
+/* Service css start  */
+
+#service{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.service-row{
+    padding-top: 70px;
+}
+.service-col{
+    width: 31.9%;
+    background-color: #f1f1f1;
+    padding: 50px 20px 20px 22px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.service-col:hover .service-icon{
+    background-color: #5bc5f4;
+    transition: all linear 0.5s;
+}
+.service-col:hover .service-icon::after{
+    border-color: #5bc5f4;
+    transition: all linear 0.5s;
+}
+.service-col:hover{
+    box-shadow: 0px 0px 4px 1px rgba(53, 53, 53, 0.2);
+    transition: all linear 0.5s;
+}
+.service-col h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #353535;
+}
+.service-col p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #353535;
+    line-height: 24px;
+    margin-top: 12px;
+}
+.service-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    line-height: 60px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+.service-icon::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 1px solid #e1e1e1;
+	transform: translate(-50%, -50%);
+}
+.service-icon::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	transform: translate(-50%, -50%);
+}
+.service-row .service-col:nth-child(3){
+    margin-right: 0px;
+}
+
+/* Service css end  */
+
+/* Portfolio css start  */
+
+#portfolio{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.portfolio-row{
+    margin-top: 50px;
+}
+.portfolio-col{
+    float: left;
+    width: 23.4%;
+    margin-right: 20px;
+}
+.portfolio-col .port-img{
+    margin-bottom: 20px;
+}
+.portfolio-col:nth-child(4){
+    margin-right: 0;
+}
+.port-img{
+    position: relative;
+    float: left;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transform: scale(0);
+}
+.overlay a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0872b9;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.port-img:hover .overlay{
+    opacity: 1;
+    transition: all linear 0.5s;
+    transform: scale(1);
+}
+
+/* Portfolio css end  */
+
+/* Our team css start  */
+
+#our-team{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.team-row{
+    margin-top: 50px;
+}
+.team-col{
+    float: left;
+    width: 23.4%;
+    margin-right: 20px;
+    /* overflow: hidden; */
+}
+.team-col:nth-child(4){
+    margin-right: 0;
+}
+.team-col h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #353535;
+    margin-top: 10px;
+    transition: all linear 0.5s;
+}
+.team-col p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #353535;
+    line-height: 24px;
+}
+.team-img{
+    position: relative;
+    transition: all linear 0.5s;
+}
+.team-icon{
+    position: relative;
+}
+.team-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all linear 0.5s;
+}
+.team-icon ul{
+    padding-top: 34px;
+}
+.team-icon ul li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    line-height: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+    transition: all linear 0.5s;
+}
+.team-img:hover{
+    box-shadow: 0px 0px 4px 1px rgba(53, 53, 53, 0.2);
+    transition: all linear 0.5s;
+}
+.team-img:hover .team-col h4{
+    color: #0872b9;
+}
+.team-img:hover .team-icon{
+    width: 80px;
+}
+.team-img:hover .team-icon ul li a:hover{
+    background-color: #0872b9;
+}
+
+/* Our team css end  */
+
+/* Testimonial css start  */
+
+#testimonial{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.testi-row{
+    margin-top: 50px;
+}
+.testi-col{
+    float: left;
+    width: 48.9%;
+    margin-right: 20px;
+}
+.testi-col:nth-child(2){
+    margin-right: 0;
+}
+.testi-img{
+    padding-bottom: 35px;
+}
+.testi-rating{
+    margin-left: 163px;
+}
+.testi-rating ul li{
+    color: #0872b9;
+    float: left;
+}
+.testi-details{
+    padding: 20px 21px;
+    background: #f1f1f1;
+    float: left; 
+    position: relative;
+}
+.testi-details::after {
+	content: '';
+	position: absolute;
+	top: -8%;
+	left: 46%;
+	width: 36px;
+	height: 36px;
+	transform: rotate(45deg);
+	background-color: #f1f1f1;
+	z-index: -1;
+}
+.testi-details h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #353535;
+    margin-top: 10px;
+}
+.testi-details p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #353535;
+    line-height: 24px;
+}
+
+
+/* Testimonial css end  */
+
+/* Footer part start  */
+
+#footer-part{
+    text-align: center;
+    background: #353535;
+}
+.footer-row{
+    height: 340px;
+}
+.footer-fst{
+    float: left;
+    width: 22.8%;
+    margin-right: 25px;
+}
+.footer-fst p{
+    line-height: 25px;  
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+.footer-fst p span{
+    padding-top: 20px;
+    display: block;
+}
+.logo2{
+    text-align: center;
+    width: 20%;
+    margin-top: 20px;
+}
+.logo2 a{
+    line-height: 80px;
+}
+.footer-sec{
+    float: left;
+    width: 22.8%;
+    text-align: start;
+}
+.footer-sec h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 40px;
+}
+.cont-logos{
+    float: left;
+    width: 30%;
+}
+.logo-col{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0872b9;
+    line-height: 40px;
+    position: relative;
+}
+.logo-col a{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cont-info{
+    float: left;
+    width: 70%;
+    position: relative;
+}
+.cont-info p1{
+    color: #fff;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, 35%);
+}
+.cont-info p2{
+    color: #fff;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-69%, 169%);
+}
+.cont-info p3{
+    color: #fff;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, 298%);
+}
+.footer-thd {
+	float: left;
+	width: 20.9%;
+	text-align: start;
+}
+.footer-thd h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 40px;
+}
+.link-detail ul{
+    width: 50%;
+    float: left;
+    margin-top: 18px;
+}
+.link-detail ul li a{
+    color: #fff;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+    transition: all linear 0.5s;
+}
+.link-detail ul li a:hover{
+    color: #0872b9
+}
+.footer-fth{
+    float: left;
+    width: 22.8%;
+    text-align: start;
+}
+.footer-fth h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 28px;
+}
+.gallery ul{
+    width: 150%;
+}
+.gallery ul li{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer part end  */
+
+/* Last css start  */
+
+#last-part{
+    text-align: center;
+    background: #555555;
+}
+.last-row{
+    height: 40px;
+}
+.last-row p{
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+}
+.last-row p a{
+    color: white
+}
+.last-row p a:hover{
+    color: #0872b9;
+    transition: all linear 0.5s;
+}
+
+/* Last css end  */
